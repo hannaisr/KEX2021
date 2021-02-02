@@ -2,7 +2,7 @@
 Kandidatexamensarbete, Andreas och Hanna 2021
 
 ### Data sets
-Har fått förslag på många dataset att leka med, men i scikit finns flera inbyggda, vilket är enklare och inte kräver några nedladdningar. Datasetten kan hämtas ned med:
+Vi har fått förslag på många dataset att leka med, men i scikit finns flera inbyggda, vilket är enklare och inte kräver några nedladdningar. Datasetten kan hämtas ned med
 
 <table class="longtable docutils align-default">
 <tbody>
@@ -29,3 +29,5 @@ Har fått förslag på många dataset att leka med, men i scikit finns flera inb
 </tr>
 </tbody>
 </table>
+
+Mer detaljer <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#toy-datasets" title="Toy datasets">här</a>

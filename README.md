@@ -1,5 +1,6 @@
 # KEX2021
-Kandidatexamensarbete, Andreas och Hanna 2021
+![Image of fingerprint](https://images.theconversation.com/files/261822/original/file-20190304-110110-1tgw1we.jpg?ixlib=rb-1.1.0&amp;rect=8%2C735%2C5633%2C2816&amp)
+(Bild stulen från <a href="https://theconversation.com/fingerprint-and-face-scanners-arent-as-secure-as-we-think-they-are-112414" title="Fingerprint and face scanners arent as secure as we think they are">en artikel i The Conversation</a>, vilken för den delen verkar lite intressant att läsa...)
 
 ### Data sets
 Vi har fått förslag på många dataset att leka med, men i scikit finns flera inbyggda, vilket är enklare och inte kräver några nedladdningar. Datasetten kan hämtas ned med

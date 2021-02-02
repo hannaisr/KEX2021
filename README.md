@@ -6,7 +6,7 @@ Har fått förslag på många dataset att leka med, men i scikit finns flera inb
 
 <table class="longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><a class="reference internal" title="sklearn.datasets.load_boston"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_boston</span></code></a>(*[, return_X_y])</td>
+<tr class="row-odd"><td><a class="reference internal" href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston" title="sklearn.datasets.load_boston"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_boston</span></code></a>(*[, return_X_y])</td>
 <td>Load and return the boston house-prices dataset (regression).</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html#sklearn.datasets.load_iris" title="sklearn.datasets.load_iris"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_iris</span></code></a>(*[, return_X_y, as_frame])</td>

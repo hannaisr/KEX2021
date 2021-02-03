@@ -31,4 +31,8 @@ Vi har fått förslag på många dataset att leka med, men i scikit finns flera 
 </tbody>
 </table>
 
-Mer detaljer <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#toy-datasets" title="Toy datasets">här</a>
+Mer detaljer om datasetten <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#toy-datasets" title="Toy datasets">här</a>
+
+### Rapport
+Länk till overleaf-fil läggs upp efter workshop om rapportskrivning
+

@@ -34,5 +34,5 @@ Vi har fått förslag på många dataset att leka med, men i scikit finns flera 
 Mer detaljer om datasetten <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#toy-datasets" title="Toy datasets">här</a>
 
 ### Overleaf
-<a href="https://www.overleaf.com/2226766734gdpzthcqxbvg" title="KEX 2021 - Report">Rapport</a>
+<a href="https://www.overleaf.com/2226766734gdpzthcqxbvg" title="KEX 2021 - Report">Rapport</a><br>
 <a href="https://www.overleaf.com/3585548193prqsgrjjfbnx" title="Arbetsplan KEX2021">Arbetsplan</a>

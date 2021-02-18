@@ -36,3 +36,10 @@ Mer detaljer om datasetten <a href="https://scikit-learn.org/stable/datasets/toy
 ### Overleaf
 <a href="https://www.overleaf.com/2226766734gdpzthcqxbvg" title="KEX 2021 - Report">Rapport</a><br>
 <a href="https://www.overleaf.com/3585548193prqsgrjjfbnx" title="Arbetsplan KEX2021">Arbetsplan</a>
+
+## Tips and tricks
+To convert .ipynb files to .py, write <br>
+```
+$ jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb
+```
+in command prompt, with [YOUR_NOTEBOOK] being the name of the notebook.

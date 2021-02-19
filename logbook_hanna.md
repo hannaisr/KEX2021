@@ -9,3 +9,7 @@ Diskussion kring hur bilderna ska roteras. Vad vill vi att testdata ska vara? Ha
 #### 2021-02-18
 Gjort om så att datan sparas som pickle.
 Gör en enkel random forest-klassificerare som ska kunna avgöra vä eller hö hand på personen.
+
+Inget fungerar. Försöker analysera hur CIFAR-datasetten är sparade för att kunna utnyttja det.
+
+Möte med Linghui. Kommer fram till att csv är ett bra sätt att spara datan på.

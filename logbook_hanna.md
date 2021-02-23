@@ -13,3 +13,6 @@ Gör en enkel random forest-klassificerare som ska kunna avgöra vä eller hö h
 Inget fungerar. Försöker analysera hur CIFAR-datasetten är sparade för att kunna utnyttja det.
 
 Möte med Linghui. Kommer fram till att csv är ett bra sätt att spara datan på.
+
+#### 2021-02-19
+Lyckas importera datan och köra en enkel 'random forest classifier' på originaldatan. Funkar utmärkt för att förutspå vilken hand fingeravtrycket kommer ifrån! Intressant.

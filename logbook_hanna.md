@@ -26,3 +26,4 @@ Använde Pickle, trots allt.
 Testar också med scikits MLPClassifier(), vilket inte ger några bra resultat alls. Vet dock inte hur denna funktion fungerar, så det kanske inte är så konstigt...
 
 #### 2021-02-23
+Skapat en extra fil för rotering av bilder, som sparar bilderna som .pkl och med alternativet att bara använda några få av personerna i databasen. Har även lagt till så att bilderna förskuts åt höger/vänster och upp/ned. Förskjutningen görs med normalfördelat antal pixlar. Rotationen kan väljas att göras uniformt eller normalfördelat.

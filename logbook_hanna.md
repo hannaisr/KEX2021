@@ -27,3 +27,6 @@ Testar också med scikits MLPClassifier(), vilket inte ger några bra resultat a
 
 #### 2021-02-23
 Skapat en extra fil för rotering av bilder, som sparar bilderna som .pkl och med alternativet att bara använda några få av personerna i databasen. Har även lagt till så att bilderna förskuts åt höger/vänster och upp/ned. Förskjutningen görs med normalfördelat antal pixlar. Rotationen kan väljas att göras uniformt eller normalfördelat.
+
+#### 2021-02-24
+Testat att identifiera 10 personer med 30 rotationer/förskjutningar per avtryck. Använde bara ett fingeravtryck (höger tumme) per person och fick en korrekthetsfaktor (?) på 0,7. Antar att detta inte är helt bra. Testade med 100 och fick faktorn 0.53, dvs inte alls bättre. 1000 rotationer per bild gav faktorn 0,88, så först här börjar lite resultat ses. 10000 funkar inte. Funkar inte att lagra så mycket i en lista.

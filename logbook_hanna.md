@@ -4,7 +4,7 @@ Försöker hitta ett sätt att göra bilderna till ett rimligt dataset.
 #### 2021-02-17
 Fortsättning på samma arbete som igår. Klar med YouTube-tutorial. Upptäcker problem med att csv inte sparar typen på värdena, utan gör om allt till sträng. Påbörjar fundering kring hur det bäst sparas istället. Pickle?
 
-Diskussion kring hur bilderna ska roteras. Vad vill vi att testdata ska vara? Hanna röstar för bilder roterade med slumpmässig vinklel, Andreas röstar för bilder roterade med nx90 $^\circ$ vinkel.
+Diskussion kring hur bilderna ska roteras. Vad vill vi att testdata ska vara? Hanna röstar för bilder roterade med slumpmässig vinklel, Andreas röstar för bilder roterade med nx90&deg; vinkel.
 
 #### 2021-02-18
 Gjort om så att datan sparas som pickle.

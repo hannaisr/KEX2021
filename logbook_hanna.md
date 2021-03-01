@@ -4,7 +4,7 @@ Försöker hitta ett sätt att göra bilderna till ett rimligt dataset.
 #### 2021-02-17
 Fortsättning på samma arbete som igår. Klar med YouTube-tutorial. Upptäcker problem med att csv inte sparar typen på värdena, utan gör om allt till sträng. Påbörjar fundering kring hur det bäst sparas istället. Pickle?
 
-Diskussion kring hur bilderna ska roteras. Vad vill vi att testdata ska vara? Hanna röstar för bilder roterade med slumpmässig vinklel, Andreas röstar för bilder roterade med nx90$^\circ$ vinkel.
+Diskussion kring hur bilderna ska roteras. Vad vill vi att testdata ska vara? Hanna röstar för bilder roterade med slumpmässig vinklel, Andreas röstar för bilder roterade med nx90 $^\circ$ vinkel.
 
 #### 2021-02-18
 Gjort om så att datan sparas som pickle.
@@ -40,3 +40,10 @@ Läser på om cross validation, https://scikit-learn.org/stable/modules/cross_va
 Testar att använda 100 rot för att identifiera 10 pers. Får utskriften
 
 "0.66 accuracy with a standard deviation of 0.03"
+
+#### 2021-03-01
+##### Möte:
+<ul>
+  <li>Testa vad effekten vlir av att bara ha svart och vitt, inte gråskala, på bilderna. </li>
+  <li>Blir DNN bättre om man har lika mycket av varje kategori?</li>
+</ul>

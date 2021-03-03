@@ -47,3 +47,8 @@ Testar att använda 100 rot för att identifiera 10 pers. Får utskriften
   <li>Testa vad effekten vlir av att bara ha svart och vitt, inte gråskala, på bilderna. </li>
   <li>Blir DNN bättre om man har lika mycket av varje kategori?</li>
 </ul>
+
+#### 2021-03-03
+Söker information om metoderna validation_curve och learning_curve. Planerar att implementera det i våra beräkningar, för att ta reda på mer precis hur mycket utökning av datasetten som behövs (och hur väl det fungerar) samt för att få fram optimala "hyper parameters".
+
+##### Möte med Linghui:

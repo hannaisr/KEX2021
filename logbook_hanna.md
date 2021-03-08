@@ -52,3 +52,40 @@ Testar att använda 100 rot för att identifiera 10 pers. Får utskriften
 Söker information om metoderna validation_curve och learning_curve. Planerar att implementera det i våra beräkningar, för att ta reda på mer precis hur mycket utökning av datasetten som behövs (och hur väl det fungerar) samt för att få fram optimala "hyper parameters".
 
 ##### Möte med Linghui:
+Try different dataset (mnist). För att verifiera metoden med att rotera bilderna.
+
+Andreas:
+<ul>
+  <li> svårt med confusion matrix</li>
+  <li> problem med pickle (DataSet)</li>
+  <li> fortfarande problem med att koppla sanna "labeln" till rätt bild </li>
+  <li> Kommer testa DNN med Tensorflow, sedan scikit. </li>
+</ul>
+
+Testa på annan data, t.ex. mnist. Se om rotationerna funkar där.
+
+#### 2021-03-08
+Testar rotationerna på mnist. Funkar inte jättebra. Bättre resultat om bilderna inte roteras så mycket, vilket känns naturligt.
+
+-----------------------------------------------
+| sigma rot | sigma move | n rots | n estimators| score 1 | score 2 | score 3 | score 4 | score 5 |
+==================================
+| 10 | dim/10 | 100 | 100 | 0.5368561426904485 | 0.5785797632938823 | 0.5736622770461743 | 0.5455909318219704 | 0.5465410901816969 |
+-----------------------------------------
+| 200 | dim/10 | 100 | 100 | 0.5591265210868478 | 0.5716452742123688 | 0.540006667777963 | 0.5508918153025504 | 0.56209368228038 |
+-----------------------------------------
+| 30 | dim/10 | 100 | 100 | 0.518403067177863 | 0.540006667777963 |
+0.5348224704117353 | 0.4895315885980997 | 0.5327054509084848 |
+------------------------------------------
+|40 | dim/10 | 100 | 100 | 0.4995832638773129 | 0.4977496249374896 |
+0.5354392398733122 | 0.5176862810468411 | 0.5226871145190866 |
+-------------------------------------------
+| 50 | dim/10 | 100 | 100 | 0.4825804300716786 | 0.4944990831805301 |
+0.4912652108684781 | 0.4489414902483747 | 0.46512752125354223 |
+----------------------------------------
+
+Funkar helt klart bättre än slumpen. Kan det antas att fingeravtryck varierar mindre än siffror?
+
+Resultatet blir bättre ju fler rotationer som används - positivt! (kan vara bra att dokumentera bättre).
+
+DISKUTERAS GÄRNA!

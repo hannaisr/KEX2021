@@ -65,7 +65,7 @@ Andreas:
 Testa på annan data, t.ex. mnist. Se om rotationerna funkar där.
 
 #### 2021-03-08
-Testar rotationerna på mnist. Funkar inte jättebra. Bättre resultat om bilderna inte roteras så mycket, vilket känns naturligt.
+Testar rotationsmetoden på mnist. Se fil mnist_test.ipynb
 
 sigma rot | sigma move | n rots | n estimators| score 1 | score 2 | score 3 | score 4 | score 5 |
 --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -77,6 +77,21 @@ sigma rot | sigma move | n rots | n estimators| score 1 | score 2 | score 3 | sc
 
 Funkar helt klart bättre än slumpen. Kan det antas att fingeravtryck varierar mindre än siffror?
 
-Resultatet blir bättre ju fler rotationer som används - positivt! (kan vara bra att dokumentera bättre).
+Resultatet blir bättre ju fler rotationer som används - positivt! Testar att ta medel-score och plotta i en figur.
 
-DISKUTERAS GÄRNA!
+<i>Mean of 5 iterations. Sigma_rot=20</i><br>
+List of number of rotations:
+[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 150, 200, 250, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000, 4000, 5000]<br>
+List of scores for those rotations:
+[0.1932022003667278, 0.36534422403733957, 0.4460810135022504, 0.5098649774962494, 0.49379563260543424, 0.5250175029171529, 0.5375629271545257, 0.5452342057009502, 0.533478913152192, 0.5602567094515754, 0.5606334389064844, 0.5716852808801467, 0.5778396399399901, 0.5768828138023003, 0.58864144024004, 0.5925754292382064, 0.5920653442240373, 0.5977929654942491, 0.5879479913318887, 0.5953258876479414, 0.5946857809634938, 0.6003567261210202, 0.6011568594765795, 0.5987997999666611, 0.6001500250041675, 0.5977329554925821]
+
+#### 2021-03-09
+Lagt till plot med resultaten från mnist-testningen. Ändrat åsikt om resultaten - tycker det verkar lovande! <i>Rätt siffra kan förutsägas med 60% säkerhet vid 1000 träningsbilder per siffra.</i> Visa Linghui.
+
+Börjar undersöka hur många träningsbilder som behövs för fingeravtrycken och minsta antal träd som ändå ger rimligt resultat.
+
+Frågor:
+<ul>
+  <li>Kan vi hänvisa till (möjligt oseriösa) hemsidor som stöttat med idéer till koden i rapporten?</li>
+  <li>Direktidentifiering tar mycket tid. Kan vi hoppa över det steget och gå direkt till flersteg, när vi sett att det funkar för en delmängd?</li>
+</ul>

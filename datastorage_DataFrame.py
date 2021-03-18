@@ -4,7 +4,7 @@
 # # Method for storing the dataset
 # Store as pandas DataFrame
 
-# In[ ]:
+# In[1]:
 
 
 import numpy as np
@@ -14,12 +14,11 @@ import cv2
 import os
 import pandas as pd
 
-DATADIR = "/home/hanna/Documents/KEX/SoCoF/archive/SOCOFing/Altered/Altered-Hard" # directory to collect files from
-IMG_SIZE = 90
-FILE_NAME = "images_altered_hard.pkl" # Name of the file in which the data will be saved. .pkl if pickle, .csv if csv
+DATADIR = "/home/hanna/Documents/KEX/SoCoF/archive/SOCOFing/Real" # directory to collect files from
+FILE_NAME = "org_imgs_newcrop.pkl" # Name of the file in which the data will be saved. .pkl if pickle, .csv if csv
 
 
-# In[11]:
+# In[2]:
 
 
 feat_dict = {
@@ -35,11 +34,11 @@ feat_dict = {
     }
 
 
-# In[12]:
+# In[3]:
 
 
-def get_attributes(img):
-    split_img = img.split('_')
+def get_attributes(img_name):
+    split_img = img_name.split('_')
     idty = int(split_img[0])
     gend = feat_dict[split_img[2]]
     hand = feat_dict[split_img[3]]
@@ -47,43 +46,63 @@ def get_attributes(img):
     return idty,gend,hand,fing
 
 
-# In[22]:
+# In[4]:
+
+
+def crop_image(img_array):
+    """Crops images to size 97x90.
+    This is the optimal size for removing all unnecessary transparent
+    areas but still keeping as much of the fingerprint as possible"""
+    new_array = np.delete(img_array, (0,1), axis=0)
+    new_array = np.delete(new_array, slice(97,None), axis=0)
+    new_array = np.delete(new_array, (0,1), axis=1)
+    new_array = np.delete(new_array, slice(90,None),axis=1)
+    return new_array
+
+
+# In[7]:
 
 
 def create_training_data():
     training_data = []
     for img in os.listdir(DATADIR):
         img_array = cv2.imread(os.path.join(DATADIR,img), cv2.IMREAD_GRAYSCALE)
-        new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
+        new_array = crop_image(img_array) # Should be outcommented if images are already cropped
         new_array = new_array.flatten()
         idty,gend,hand,fing = get_attributes(img)
         training_data.append([new_array,idty,gend,hand,fing])
     return(training_data)
 
 
-# In[23]:
+# In[8]:
 
 
 training_data = create_training_data()
 
 
-# In[6]:
+# In[9]:
 
 
 print(len(training_data))
 
 
-# In[7]:
+# In[10]:
 
 
 # Store data in pandas DataFrame
 df = pd.DataFrame(training_data, columns=["Image","Identity","Gender","Hand","Finger"])
 
 
-# In[8]:
+# In[11]:
 
 
-df.head()
+# df.head()
+
+
+# In[12]:
+
+
+# len(df["Image"][0])
 
 
 # ## CSV
@@ -100,20 +119,20 @@ df.head()
 
 
 # Save data to csv file "images.csv"
-df.to_csv(FILE_NAME,index=False)
+# df.to_csv(FILE_NAME,index=False)
 
 
 # In[9]:
 
 
 # Read file and store the data in DataFrame df
-uncsvd_df = pd.read_csv('images2.csv')
+# uncsvd_df = pd.read_csv('images2.csv')
 
 
 # In[10]:
 
 
-type(uncsvd_df["Image"][0])
+# type(uncsvd_df["Image"][0])
 
 
 # ## Pickle
@@ -125,7 +144,7 @@ type(uncsvd_df["Image"][0])
 # $-$ Only Python <br>
 # (https://stackoverflow.com/questions/48770542/what-is-the-difference-between-save-a-pandas-dataframe-to-pickle-and-to-csv)
 
-# In[9]:
+# In[13]:
 
 
 # Save data as pickle
@@ -136,13 +155,13 @@ df.to_pickle(FILE_NAME)
 
 
 # Read pickle data
-unpickled_df = pd.read_pickle("images.pkl")
+# unpickled_df = pd.read_pickle("images.pkl")
 
 
 # In[13]:
 
 
-type(unpickled_df["Image"][0])
+# type(unpickled_df["Image"][0])
 
 
 # In[ ]:

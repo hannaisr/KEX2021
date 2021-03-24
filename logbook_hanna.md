@@ -88,10 +88,24 @@ List of scores for those rotations:
 #### 2021-03-09
 Lagt till plot med resultaten från mnist-testningen. Ändrat åsikt om resultaten - tycker det verkar lovande! <i>Rätt siffra kan förutsägas med 60% säkerhet vid 1000 träningsbilder per siffra.</i> Visa Linghui.
 
-Börjar undersöka hur många träningsbilder som behövs för fingeravtrycken och minsta antal träd som ändå ger rimligt resultat.
+Börjar undersöka hur många träningsbilder som behövs för fingeravtrycken och minsta antal träd som ändå ger rimligt resultat. Försökte skapa en fil med 1000 rotationer per fingeravtryck (10 st), vilket ledde till att datorn kraschade. Oklart om datorn klarar ens 1000. <i>Hur hanterar vi det här?</i>
 
 Frågor:
 <ul>
   <li>Kan vi hänvisa till (möjligt oseriösa) hemsidor som stöttat med idéer till koden i rapporten?</li>
   <li>Direktidentifiering tar mycket tid. Kan vi hoppa över det steget och gå direkt till flersteg, när vi sett att det funkar för en delmängd?</li>
 </ul>
+
+#### 2021-03-11
+Vet inte vad jag kan göra. Väntar på Andreas bildbeskärningar.
+
+#### 2021-03-17
+##### Möte
+Skapa graf för antal rotationer etc.
+Jämför olika dataset för att ta reda på vad som är en godtagbar noggrannhet. MNIST säger t.ex. 60%.
+
+#### 2021-03-23
+Testade på mnist med "vanlig" slags random forest och fick en noggrannhet på 96,5%. Något bättre än vår metod, kan sägas.
+
+#### 2021-03-24
+Försöker skapa en graf för cv-score mot antal bilder per fingeravtryck. Går inte bra, går bara långsamt. (Simple Random Forest.ipynb)

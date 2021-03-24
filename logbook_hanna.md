@@ -108,4 +108,6 @@ Jämför olika dataset för att ta reda på vad som är en godtagbar noggrannhet
 Testade på mnist med "vanlig" slags random forest och fick en noggrannhet på 96,5%. Något bättre än vår metod, kan sägas.
 
 #### 2021-03-24
-Försöker skapa en graf för cv-score mot antal bilder per fingeravtryck. Går inte bra, går bara långsamt. (Simple Random Forest.ipynb)
+Försöker skapa en graf för cv-score mot antal bilder per fingeravtryck. Går inte bra. Krasch som vanligt (Simple Random Forest.ipynb)
+
+Går över till att bara köra 10 pers, ett finger. Funkar. Frågan är hur giltigt det är... Vet inte vad man ska tolka ur grafen över mean cval score vs number of images per fingerprint (finns i mappen figures).

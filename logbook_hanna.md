@@ -117,3 +117,5 @@ Går över till att bara köra 10 pers, ett finger. Funkar. Frågan är hur gilt
 
 #### 2021-03-28
 Utkast till 2-stegs färdig. Finns i filen multi_stage_rf. Behöver modifieras lite för att vara användarvändlig, men funkar i alla fall som det är nu.
+
+Användarvänligheten fixad. Ger dålig noggrannhet (som väntat).

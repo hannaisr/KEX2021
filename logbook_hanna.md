@@ -111,3 +111,9 @@ Testade på mnist med "vanlig" slags random forest och fick en noggrannhet på 9
 Försöker skapa en graf för cv-score mot antal bilder per fingeravtryck. Går inte bra. Krasch som vanligt (Simple Random Forest.ipynb)
 
 Går över till att bara köra 10 pers, ett finger. Funkar. Frågan är hur giltigt det är... Vet inte vad man ska tolka ur grafen över mean cval score vs number of images per fingerprint (finns i mappen figures).
+
+#### 2021-03-25
+100-200 rotations per fingerprint. Good enough according to the graph, or something. Test the performance for different number of fingerprints. Is multistage more successful?
+
+#### 2021-03-28
+Utkast till 2-stegs färdig. Finns i filen multi_stage_rf. Behöver modifieras lite för att vara användarvändlig, men funkar i alla fall som det är nu.

@@ -12,9 +12,19 @@
   <li><b>two_stage_rf.ipynb</b> - Code for two-stage identification.</li>
 </ul>
 
+### Overleaf
+<a href="https://www.overleaf.com/2226766734gdpzthcqxbvg" title="KEX 2021 - Report">Report</a><br>
+<a href="https://www.overleaf.com/3585548193prqsgrjjfbnx" title="Arbetsplan KEX2021">Work plan</a>
 
+## Tips and tricks
+#### File conversion
+To convert .ipynb files to .py, write <br>
+```
+$ jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb
+```
+in command prompt, with [YOUR_NOTEBOOK] being the name of the notebook.
 
-### Datasets
+#### Datasets
 Many different datasets have been suggested to use while developing the programmes, but scikit has many convenient datasets included and they are simpler to use and do not require any downloads. The datasets can be collected with the commands
 
 <table class="longtable docutils align-default">
@@ -44,14 +54,3 @@ Many different datasets have been suggested to use while developing the programm
 </table>
 
 For more details, follow <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#toy-datasets" title="Toy datasets">this link</a>.
-
-### Overleaf
-<a href="https://www.overleaf.com/2226766734gdpzthcqxbvg" title="KEX 2021 - Report">Report</a><br>
-<a href="https://www.overleaf.com/3585548193prqsgrjjfbnx" title="Arbetsplan KEX2021">Work plan</a>
-
-## Tips and tricks
-To convert .ipynb files to .py, write <br>
-```
-$ jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb
-```
-in command prompt, with [YOUR_NOTEBOOK] being the name of the notebook.

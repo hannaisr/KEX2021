@@ -3,18 +3,14 @@
 <i>Image from <a href="https://theconversation.com/fingerprint-and-face-scanners-arent-as-secure-as-we-think-they-are-112414" title="Fingerprint and face scanners arent as secure as we think they are">The Conversation</a> (interesting article).</i>
 
 ### The files in this repository
-#### datastorage_DataFrame.ipynb
-Code for storing images as pickle file.
-#### image_rotation.ipynb
-Code for extending the dataset by creating multiple copies of each image, altered by Gaussian distributed rotations and shifts.
-#### 10_first_ppl_100_rots.pkl
-A pickle file with fingerprints from the first ten people in the original SOCOF dataset, extended to include 100 altered copies of each original image.
-#### Simple Random Forest.ipynb
-Code for single-stage identification, including algorithms for cross validation and determining how the number of altered copies affect accuracy.
-#### mnist_test.ipynb
-Code for testing how well the dataset extension works.
-#### two_stage_rf.ipynb
-Code for two-stage identification.
+<ul>
+  <li><b>datastorage_DataFrame.ipynb</b> - Code for storing images as pickle file.</li>
+  <li><b>image_rotation.ipynb</b> - Code for extending the dataset by creating multiple copies of each image, altered by Gaussian distributed rotations and shifts.</li>
+  <li><b>10_first_ppl_100_rots.pkl</b> - A pickle file with fingerprints from the first ten people in the original SOCOF dataset, extended to include 100 altered copies of each original image.</li>
+  <li><b>Simple Random Forest.ipynb</b> - Code for single-stage identification, including algorithms for cross validation and determining how the number of altered copies affect accuracy.</li>
+  <li><b>mnist_test.ipynb</b> - Code for testing how well the dataset extension works.</li>
+  <li><b>two_stage_rf.ipynb</b> - Code for two-stage identification.</li>
+</ul>
 
 
 

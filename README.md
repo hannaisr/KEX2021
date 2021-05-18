@@ -1,9 +1,31 @@
 # KEX2021
 ![Image of fingerprint](https://images.theconversation.com/files/261822/original/file-20190304-110110-1tgw1we.jpg?ixlib=rb-1.1.0&amp;rect=8%2C735%2C5633%2C2816&amp)
-<i>Bild stulen från <a href="https://theconversation.com/fingerprint-and-face-scanners-arent-as-secure-as-we-think-they-are-112414" title="Fingerprint and face scanners arent as secure as we think they are">The Conversation</a> (och en artikel som för den delen verkar lite intressant att läsa).</i>
+<i>Image from <a href="https://theconversation.com/fingerprint-and-face-scanners-arent-as-secure-as-we-think-they-are-112414" title="Fingerprint and face scanners arent as secure as we think they are">The Conversation</a> (interesting article).</i>
 
-### Data sets
-Vi har fått förslag på många dataset att leka med, men i scikit finns flera inbyggda, vilket är enklare och inte kräver några nedladdningar. Datasetten kan hämtas ned med
+### The files in this repository
+<ul>
+  <li><b>datastorage_DataFrame.ipynb</b> - Code for storing images as pickle file.</li>
+  <li><b>image_rotation.ipynb</b> - Code for extending the dataset by creating multiple copies of each image, altered by Gaussian distributed rotations and shifts.</li>
+  <li><b>10_first_ppl_100_rots.pkl</b> - A pickle file with fingerprints from the first ten people in the original SOCOF dataset, extended to include 100 altered copies of each original image.</li>
+  <li><b>Simple Random Forest.ipynb</b> - Code for single-stage identification, including algorithms for cross validation and determining how the number of altered copies affect accuracy.</li>
+  <li><b>mnist_test.ipynb</b> - Code for testing how well the dataset extension works.</li>
+  <li><b>two_stage_rf.ipynb</b> - Code for two-stage identification.</li>
+</ul>
+
+### Overleaf
+<a href="https://www.overleaf.com/2226766734gdpzthcqxbvg" title="KEX 2021 - Report">Report</a><br>
+<a href="https://www.overleaf.com/3585548193prqsgrjjfbnx" title="Arbetsplan KEX2021">Work plan</a>
+
+## Tips and tricks
+#### File conversion
+To convert .ipynb files to .py, write <br>
+```
+$ jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb
+```
+in command prompt, with [YOUR_NOTEBOOK] being the name of the notebook.
+
+#### Datasets
+Many different datasets have been suggested to use while developing the programmes, but scikit has many convenient datasets included and they are simpler to use and do not require any downloads. The datasets can be collected with the commands
 
 <table class="longtable docutils align-default">
 <tbody>
@@ -31,15 +53,4 @@ Vi har fått förslag på många dataset att leka med, men i scikit finns flera 
 </tbody>
 </table>
 
-Mer detaljer om datasetten <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#toy-datasets" title="Toy datasets">här</a>
-
-### Overleaf
-<a href="https://www.overleaf.com/2226766734gdpzthcqxbvg" title="KEX 2021 - Report">Rapport</a><br>
-<a href="https://www.overleaf.com/3585548193prqsgrjjfbnx" title="Arbetsplan KEX2021">Arbetsplan</a>
-
-## Tips and tricks
-To convert .ipynb files to .py, write <br>
-```
-$ jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb
-```
-in command prompt, with [YOUR_NOTEBOOK] being the name of the notebook.
+For more details, follow <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#toy-datasets" title="Toy datasets">this link</a>.
